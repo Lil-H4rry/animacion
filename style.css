@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    overflow: hidden; 
+    background-color:  rgb(27, 28, 83);
+} 
+
+
+.caja {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(17, 18, 54);
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: movimiento 8s infinite;
+}
+
+@keyframes movimiento {
+0% {
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+    transform: rotate(0deg);
+}
+
+25% {
+    top: calc(100vh - 100px);
+    left: 0;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+50% {
+    top: calc(100vh - 100px);
+    left: calc(100vw - 100px);
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
+
+75% {
+    top: 0;
+    left: calc(100vw - 100px);
+    border-radius: 50%;
+    transform: rotate(270deg);
+}
+
+100% {
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+    transform: rotate(360deg);
+}
+}
